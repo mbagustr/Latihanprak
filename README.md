@@ -1,0 +1,2 @@
+# Latihanprak
+Pemrograman fungsional
