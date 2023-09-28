@@ -1,0 +1,24 @@
+list = [105, 3.1, "HERE", 737, "WE", 2.7, "GO", 412, 5.5, "!"]
+
+int_dict = {}
+float_tuple = ()
+string_list = []
+
+for item in list:
+    if isinstance(item, int):
+        
+        satuan = item % 10
+        puluhan = (item // 10) % 10
+        ratusan = item // 100
+        int_dict[item] = (ratusan, puluhan, satuan)
+    elif isinstance(item, float):
+        float_tuple += (item,)
+    elif isinstance(item, str):
+        string_list.append(item)
+
+print("Data Integer dalam Dictionary:")
+print(int_dict)
+print("\nData Float dalam Tuple:")
+print(float_tuple)
+print("\nData String dalam List:")
+print(string_list)
